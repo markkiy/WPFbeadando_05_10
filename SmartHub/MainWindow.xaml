@@ -3,10 +3,173 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:SmartHub"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="SmartHub"
+        Height="556"
+        Width="864">
 
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- BAL PANEL -->
+        <Grid Grid.Column="0"
+              Margin="0,0,15,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       Text="Okos Eszközeim"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       Margin="0,0,0,10" />
+
+            <ListBox Grid.Row="1"
+                     x:Name="EszkozLista"
+                     ItemsSource="{Binding Devices}"
+                     SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
+                     Margin="0,0,0,15">
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="5">
+                            <TextBlock Text="{Binding Name}"
+                                       FontSize="16"
+                                       FontWeight="Bold" />
+                            <TextBlock Text="{Binding Room}"
+                                       FontSize="12"
+                                       FontWeight="SemiBold" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+
+            </ListBox>
+
+            <Button Grid.Row="2"
+                    Content="+ Új Eszköz Hozzáadása"
+                    Padding="10"
+                    Background="#4CAF50"
+                    Foreground="White"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    BorderThickness="0" />
+        </Grid>
+
+        <!-- JOBB PANEL -->
+        <Border x:Name="RightPanel"
+                Grid.Column="1"
+                Background="#F8F9FA"
+                CornerRadius="8"
+                Padding="20"
+                BorderBrush="#E0E0E0"
+                BorderThickness="1"
+             >
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0"
+                       Height="80"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20" />
+
+                <StackPanel Grid.Row="1"
+                            Margin="0,0,0,15">
+                    <TextBlock Text="Eszköz neve:"
+                               Foreground="#555"
+                               FontSize="12"
+                               Margin="0,0,0,5" />
+                    <TextBox Text="{Binding SelectedDevice.Name, UpdateSourceTrigger=PropertyChanged}"
+                             Padding="8" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2"
+                            Margin="0,0,0,15">
+                    <TextBlock Text="Helyiség:"
+                               Foreground="#555"
+                               FontSize="12"
+                               Margin="0,0,0,5" />
+                    <TextBox Text="{Binding SelectedDevice.Room, UpdateSourceTrigger=PropertyChanged}"
+                             Padding="8" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="3"
+                            Margin="0,0,0,15">
+                    <TextBlock Text="Beállított érték:"
+                               Foreground="#555"
+                               FontSize="12"
+                               Margin="0,0,0,5" />
+
+                    <xctk:IntegerUpDown Value="{Binding SelectedDevice.Value, UpdateSourceTrigger=PropertyChanged}"
+                                        Minimum="0"
+                                        Maximum="100" />
+                </StackPanel>
+
+                <CheckBox Grid.Row="4"
+                          Content="Eszköz Bekapcsolva"
+                          IsChecked="{Binding SelectedDevice.IsTurnedOn}"
+                          FontSize="16"
+                          FontWeight="Bold"
+                          Margin="0,0,0,20" />
+
+                <StackPanel Grid.Row="5"
+                            Orientation="Horizontal"
+                            Margin="0,0,0,15"
+                            Background="#E3F2FD">
+
+                    <TextBlock Text="Becsült havi fogyasztás: "
+                               FontWeight="SemiBold" />
+
+                    <TextBlock Text="{Binding SelectedDevice.MonthlyUsage}"
+                               FontWeight="Bold"
+                               Foreground="#1976D2" />
+
+                    <TextBlock Text=" kWh"
+                               FontWeight="Bold"
+                               Foreground="#1976D2" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="7"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+
+                    <Button Content="Betöltés"
+                            Width="120"
+                            Background="Green"
+                            Foreground="White"
+                            Margin="0,0,10,0"
+                            Click="Load_Button_Click"
+                            IsEnabled="True" />
+                    
+                    <Button Content="Törlés"
+                            Width="100"
+                            Background="Red"
+                            Foreground="White"
+                            Margin="0,0,10,0" />
+
+                    <Button Content="Mentés"
+                            Width="120"
+                            Background="#2196F3"
+                            Foreground="White" />
+                </StackPanel>
+            </Grid>
+        </Border>
     </Grid>
 </Window>
