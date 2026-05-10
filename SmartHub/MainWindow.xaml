@@ -35,7 +35,8 @@
                      x:Name="EszkozLista"
                      ItemsSource="{Binding Devices}"
                      SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
-                     Margin="0,0,0,15">
+                     Margin="0,0,0,15"
+                     SelectionChanged="EszkozLista_SelectionChanged">
 
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">    
@@ -73,7 +74,8 @@
                     Foreground="White"
                     FontSize="14"
                     FontWeight="Bold"
-                    BorderThickness="0" />
+                    BorderThickness="0"
+                    Click="Add_Button_Click" />
         </Grid>
 
         <!-- JOBB PANEL -->
@@ -109,7 +111,7 @@
                                Foreground="#555"
                                FontSize="12"
                                Margin="0,0,0,5" />
-                    <TextBox Text="{Binding SelectedDevice.Name, UpdateSourceTrigger=LostFocus}"
+                    <TextBox Text="{Binding SelectedDevice.Name, UpdateSourceTrigger=PropertyChanged}"
                              Padding="8" />
                 </StackPanel>
 
@@ -119,7 +121,7 @@
                                Foreground="#555"
                                FontSize="12"
                                Margin="0,0,0,5" />
-                    <TextBox Text="{Binding SelectedDevice.Room, UpdateSourceTrigger=LostFocus}"
+                    <TextBox Text="{Binding SelectedDevice.Room, UpdateSourceTrigger=PropertyChanged}"
                              Padding="8" />
                 </StackPanel>
 
@@ -175,12 +177,14 @@
                             Width="100"
                             Background="Red"
                             Foreground="White"
-                            Margin="0,0,10,0" />
+                            Margin="0,0,10,0"
+                            Click="Delete_Button_Click" />
 
                     <Button Content="Mentés"
                             Width="120"
                             Background="#2196F3"
-                            Foreground="White" />
+                            Foreground="White"
+                            Click="Save_Button_Click" />
                 </StackPanel>
             </Grid>
         </Border>
