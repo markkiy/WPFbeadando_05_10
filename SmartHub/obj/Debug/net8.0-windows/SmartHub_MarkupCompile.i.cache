@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\homok\Desktop\wpf beadando\SmartHub\obj\Debug\net8.0-windows\
+D:\code\wpfbeadando\WPFbeadando_05_10\SmartHub\obj\Debug\net8.0-windows\
 SmartHub
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\homok\Desktop\wpf beadando\SmartHub\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+D:\code\wpfbeadando\WPFbeadando_05_10\SmartHub\App.xaml
 11407045341
 
 7-358341199
-2031766634781
+203619397248
 MainWindow.xaml;
 
 True

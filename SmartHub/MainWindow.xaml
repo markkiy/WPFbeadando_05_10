@@ -8,7 +8,9 @@
         mc:Ignorable="d"
         Title="SmartHub"
         Height="556"
-        Width="864">
+        Width="864"
+        MinHeight="500"
+        MinWidth="700">
 
     <Grid Margin="15">
         <Grid.ColumnDefinitions>
@@ -16,7 +18,6 @@
             <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
 
-        <!-- BAL PANEL -->
         <Grid Grid.Column="0"
               Margin="0,0,15,0">
             <Grid.RowDefinitions>
@@ -38,12 +39,12 @@
                      Margin="0,0,0,15">
 
                 <ListBox.ItemContainerStyle>
-                    <Style TargetType="ListBoxItem">    
+                    <Style TargetType="ListBoxItem">
                         <Setter Property="Background" Value="Red" />
                         <Style.Triggers>
                             <DataTrigger Binding="{Binding IsTurnedOn}"
                                      Value="True" >
-                            <Setter Property="Background"
+                                <Setter Property="Background"
                                     Value="Green"/>
                             </DataTrigger>
                         </Style.Triggers>
@@ -76,15 +77,13 @@
                     BorderThickness="0" />
         </Grid>
 
-        <!-- JOBB PANEL -->
         <Border x:Name="RightPanel"
                 Grid.Column="1"
                 Background="#F8F9FA"
                 CornerRadius="8"
                 Padding="20"
                 BorderBrush="#E0E0E0"
-                BorderThickness="1"
-             >
+                BorderThickness="1">
 
             <Grid>
                 <Grid.RowDefinitions>
@@ -101,7 +100,9 @@
                 <Image Grid.Row="0"
                        Height="80"
                        HorizontalAlignment="Center"
-                       Margin="0,0,0,20" />
+                       Margin="0,0,0,20" Source="/house_1f3e0.png"
+                       Stretch="Uniform" Visibility="Visible"
+                       SnapsToDevicePixels="True" />
 
                 <StackPanel Grid.Row="1"
                             Margin="0,0,0,15">
@@ -110,7 +111,16 @@
                                FontSize="12"
                                Margin="0,0,0,5" />
                     <TextBox Text="{Binding SelectedDevice.Name, UpdateSourceTrigger=LostFocus}"
-                             Padding="8" />
+                             Padding="8" RenderTransformOrigin="0.5,0.5" >
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0.22"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
                 </StackPanel>
 
                 <StackPanel Grid.Row="2"
@@ -170,7 +180,7 @@
                             Margin="0,0,10,0"
                             Click="Load_Button_Click"
                             IsEnabled="True" />
-                    
+
                     <Button Content="Törlés"
                             Width="100"
                             Background="Red"
