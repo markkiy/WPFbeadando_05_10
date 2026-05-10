@@ -1,0 +1,9 @@
+Lámpa;Nappali;75;0,06;Fényerő;1
+Termosztát;Hálószoba;22;1,5;Hőfok;1
+Konnektor;Konyha;0;2,5;Energia;0
+LED Szalag;Folyosó;50;0,02;Fényerő;1
+Fűtés;Fürdőszoba;24;2,0;Hőfok;0
+Kapu;Garázs;0;0,4;Nyitás;0
+Öntöző;Kert;30;0,8;Időzítés;1
+Klíma;Dolgozószoba;21;1,2;Hőfok;0
+Világítás;Pince;100;0,06;Fényerő;0
