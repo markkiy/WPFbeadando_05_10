@@ -12,14 +12,16 @@ namespace SmartHub
         public string Room { get; set; }
         public int Value { get; set; }
         public double Consumption { get; set; }
+        public string SettingType {get;set;}
         public bool IsTurnedOn { get; set; }
 
-        public Device(string name, string room, int value, double consumption, bool isTurnedOn)
+        public Device(string name, string room, int value, double consumption, string settingtype, bool isTurnedOn)
         {
             Name = name;
             Room = room;
             Value = value;
             Consumption = consumption;
+            SettingType = settingtype;
             IsTurnedOn = isTurnedOn;
         }
 

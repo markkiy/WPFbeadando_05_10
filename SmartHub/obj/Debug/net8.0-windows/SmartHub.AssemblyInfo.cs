@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f7586b79fb7364f23082c41e5a3480ded6893ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c645dd821d4e0479618752f1539a2e917fc8057")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -39,7 +39,7 @@
 
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal"
+                        <StackPanel Orientation="Vertical"
                                     Margin="5">
                             <TextBlock Text="{Binding Name}"
                                        FontSize="16"
@@ -96,7 +96,7 @@
                                Foreground="#555"
                                FontSize="12"
                                Margin="0,0,0,5" />
-                    <TextBox Text="{Binding SelectedDevice.Name, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding SelectedDevice.Name, UpdateSourceTrigger=LostFocus}"
                              Padding="8" />
                 </StackPanel>
 
@@ -106,13 +106,13 @@
                                Foreground="#555"
                                FontSize="12"
                                Margin="0,0,0,5" />
-                    <TextBox Text="{Binding SelectedDevice.Room, UpdateSourceTrigger=PropertyChanged}"
+                    <TextBox Text="{Binding SelectedDevice.Room, UpdateSourceTrigger=LostFocus}"
                              Padding="8" />
                 </StackPanel>
 
                 <StackPanel Grid.Row="3"
                             Margin="0,0,0,15">
-                    <TextBlock Text="Beállított érték:"
+                    <TextBlock Text="{Binding SelectedDevice.SettingType}"
                                Foreground="#555"
                                FontSize="12"
                                Margin="0,0,0,5" />
@@ -124,7 +124,7 @@
 
                 <CheckBox Grid.Row="4"
                           Content="Eszköz Bekapcsolva"
-                          IsChecked="{Binding SelectedDevice.IsTurnedOn}"
+                          IsChecked="{Binding SelectedDevice.IsTurnedOn, UpdateSourceTrigger=PropertyChanged}"
                           FontSize="16"
                           FontWeight="Bold"
                           Margin="0,0,0,20" />
@@ -141,7 +141,7 @@
                                FontWeight="Bold"
                                Foreground="#1976D2" />
 
-                    <TextBlock Text=" kWh"
+                    <TextBlock Text=" Ft"
                                FontWeight="Bold"
                                Foreground="#1976D2" />
                 </StackPanel>

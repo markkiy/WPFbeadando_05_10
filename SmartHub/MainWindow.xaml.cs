@@ -51,8 +51,8 @@ namespace SmartHub
             while (!r.EndOfStream)
             {
                 string[] temp = r.ReadLine()!.Split(";");
-                bool IsOn = temp[4] == "1";
-                Device d = new(temp[0], temp[1], int.Parse(temp[2]), double.Parse(temp[3]), IsOn);
+                bool IsOn = temp[5] == "1";
+                Device d = new(temp[0], temp[1], int.Parse(temp[2]), double.Parse(temp[3]), temp[4], IsOn);
                 Devices.Add(d);
             }
 
