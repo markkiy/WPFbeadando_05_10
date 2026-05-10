@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\code\\wpfbeadando\\WPFbeadando_05_10\\SmartHub\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|d:\\code\\wpfbeadando\\wpfbeadando_05_10\\smarthub\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -17,6 +18,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|d:\\code\\wpfbeadando\\wpfbeadando_05_10\\smarthub\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+=======
+      "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|c:\\users\\homok\\desktop\\wpf beadando\\smarthub\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|c:\\users\\homok\\desktop\\wpf beadando\\smarthub\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|c:\\users\\homok\\desktop\\wpf beadando\\smarthub\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+>>>>>>> 28e5c0f92e98975f6aa26f93f9b7632032187f90
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +43,7 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\code\\wpfbeadando\\WPFbeadando_05_10\\SmartHub\\App.xaml",
@@ -38,11 +52,23 @@
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-05-10T12:16:58.401Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\homok\\Desktop\\wpf beadando\\SmartHub\\Device.cs",
+              "RelativeDocumentMoniker": "Device.cs",
+              "ToolTip": "C:\\Users\\homok\\Desktop\\wpf beadando\\SmartHub\\Device.cs",
+              "RelativeToolTip": "Device.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAIwDoAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T16:37:24.999Z",
+>>>>>>> 28e5c0f92e98975f6aa26f93f9b7632032187f90
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "Device.cs",
               "DocumentMoniker": "D:\\code\\wpfbeadando\\WPFbeadando_05_10\\SmartHub\\Device.cs",
               "RelativeDocumentMoniker": "Device.cs",
@@ -55,6 +81,8 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+=======
+>>>>>>> 28e5c0f92e98975f6aa26f93f9b7632032187f90
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\code\\wpfbeadando\\WPFbeadando_05_10\\SmartHub\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -72,7 +100,11 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\code\\wpfbeadando\\WPFbeadando_05_10\\SmartHub\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwH8AAAAJAAAAAAAAAA==",
+>>>>>>> 28e5c0f92e98975f6aa26f93f9b7632032187f90
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T16:04:13.569Z",
               "EditorCaption": ""
