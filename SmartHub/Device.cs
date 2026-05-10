@@ -32,7 +32,7 @@ namespace SmartHub
             return $"{Name}";
         }
 
-        public double MonthlyUsage => Value * 100;
+        public double MonthlyUsage => Consumption * 100;
 
     }
 }

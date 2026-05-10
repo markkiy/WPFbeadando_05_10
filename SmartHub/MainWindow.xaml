@@ -37,6 +37,19 @@
                      SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
                      Margin="0,0,0,15">
 
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">    
+                        <Setter Property="Background" Value="Red" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsTurnedOn}"
+                                     Value="True" >
+                            <Setter Property="Background"
+                                    Value="Green"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Vertical"

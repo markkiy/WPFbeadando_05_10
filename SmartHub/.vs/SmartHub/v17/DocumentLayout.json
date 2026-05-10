@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\homok\\Desktop\\wpf beadando\\SmartHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|c:\\users\\homok\\desktop\\wpf beadando\\smarthub\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|c:\\users\\homok\\desktop\\wpf beadando\\smarthub\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|c:\\users\\homok\\desktop\\wpf beadando\\smarthub\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|c:\\users\\homok\\desktop\\wpf beadando\\smarthub\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -32,14 +32,14 @@
               "RelativeDocumentMoniker": "Device.cs",
               "ToolTip": "C:\\Users\\homok\\Desktop\\wpf beadando\\SmartHub\\Device.cs",
               "RelativeToolTip": "Device.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAABiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T16:37:24.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\homok\\Desktop\\wpf beadando\\SmartHub\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\homok\\Desktop\\wpf beadando\\SmartHub\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\homok\\Desktop\\wpf beadando\\SmartHub\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAcwDUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T16:04:13.569Z",
               "EditorCaption": ""
