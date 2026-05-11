@@ -41,12 +41,13 @@
 
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
-                        <Setter Property="Background" Value="Red" />
+                        <Setter Property="Background"
+                                Value="Red" />
                         <Style.Triggers>
                             <DataTrigger Binding="{Binding IsTurnedOn}"
-                                     Value="True" >
+                                         Value="True">
                                 <Setter Property="Background"
-                                    Value="Green"/>
+                                        Value="Green" />
                             </DataTrigger>
                         </Style.Triggers>
                     </Style>
@@ -101,10 +102,9 @@
 
                 <Image Grid.Row="0"
                        Height="80"
-                       HorizontalAlignment="Center"
-                       Margin="0,0,0,20" Source="/house_1f3e0.png"
-                       Stretch="Uniform" Visibility="Visible"
-                       SnapsToDevicePixels="True" />
+                       HorizontalAlignment="center"
+                       Margin="0,0,0,20"
+                       Source="assets/house.png" />
 
                 <StackPanel Grid.Row="1"
                             Margin="0,0,0,15">
@@ -127,15 +127,29 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="3"
-                            Margin="0,0,0,15">
-                    <TextBlock Text="{Binding SelectedDevice.SettingType}"
+                            Orientation="Vertical"
+                            Margin="0,0,0,20">
+                    <TextBlock Text="Típus:"
                                Foreground="#555"
                                FontSize="12"
                                Margin="0,0,0,5" />
+                    <Grid Height="30">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
 
-                    <xctk:IntegerUpDown Value="{Binding SelectedDevice.Value, UpdateSourceTrigger=PropertyChanged}"
-                                        Minimum="0"
-                                        Maximum="100" />
+                        <TextBox Grid.Column="0"
+                                 Text="{Binding SelectedDevice.SettingType, UpdateSourceTrigger=PropertyChanged}"
+                                 Foreground="#555"
+                                 Margin="0,0,10,0"
+                                 Padding="6" />
+
+                        <xctk:IntegerUpDown Grid.Column="1"
+                                            Value="{Binding SelectedDevice.Value, UpdateSourceTrigger=PropertyChanged}"
+                                            Minimum="0"
+                                            Maximum="100" />
+                    </Grid>
                 </StackPanel>
 
                 <CheckBox Grid.Row="4"
@@ -165,6 +179,13 @@
                 <StackPanel Grid.Row="7"
                             Orientation="Horizontal"
                             HorizontalAlignment="Right">
+                    <Button Content="Új eszköz"
+                            Width="120"
+                            Background="Yellow"
+                            Foreground="Black"
+                            Margin="0,0,10,0"
+                            IsEnabled="True"
+                            Click="New_Button_Click" />
 
                     <Button Content="Betöltés"
                             Width="120"

@@ -32,7 +32,7 @@ namespace SmartHub
         //    { "konnektor", "Energia" }
         //};
 
-        private Device selectedDevice;
+        private Device? selectedDevice;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -102,27 +102,28 @@ namespace SmartHub
         {
             if (EszkozLista.SelectedItem == null)
             {
-                selectedDevice = new();
+                SelectedDevice = new();
             }
 
         }
 
         private void Add_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (selectedDevice.Name == "" || selectedDevice.Room == "")
+            if (SelectedDevice.Name == "" || SelectedDevice.Room == "")
             {
                 MessageBox.Show($"Váratlan hiba történt. Üres mező nem lehet!", "Hiba", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            Device tempd = new Device(selectedDevice.Name, selectedDevice.Room, selectedDevice.Value, 10, "Általános", selectedDevice.IsTurnedOn);
+            Device tempd = new Device(SelectedDevice.Name, SelectedDevice.Room, SelectedDevice.Value, 10, SelectedDevice.SettingType, SelectedDevice.IsTurnedOn);
             Devices.Add(tempd);
+            
         }
 
         private void Delete_Button_Click(object sender, RoutedEventArgs e)
         {
             if (SelectedDevice != null)
             {
-            Devices.Remove(SelectedDevice);
+                Devices.Remove(SelectedDevice);
 
             }
         }
@@ -149,6 +150,11 @@ namespace SmartHub
                 MessageBox.Show($"Hiba történt a mentés során: {ex.Message}");
             }
             
+        }
+
+        private void New_Button_Click(object sender, RoutedEventArgs e)
+        {
+            EszkozLista.SelectedIndex = -1;
         }
     }
 }

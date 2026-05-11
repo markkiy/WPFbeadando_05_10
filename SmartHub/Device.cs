@@ -46,7 +46,8 @@ namespace SmartHub
             {
                 valueertek = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Value)));
-                
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(MonthlyUsage)));
+
             }
         }
         public double Consumption
@@ -106,7 +107,7 @@ namespace SmartHub
             return $"{Name}";
         }
 
-        public double MonthlyUsage => Consumption * 100;
+        public double MonthlyUsage => Math.Round((Value / 1.5) * Consumption * 70, 2);
 
     }
 }
