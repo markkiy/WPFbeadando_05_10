@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "H:\\!Asztali valami2\\beadando_05_17\\WPFbeadando_05_10\\SmartHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|h:\\!asztali valami2\\beadando_05_17\\wpfbeadando_05_10\\smarthub\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|h:\\!asztali valami2\\beadando_05_17\\wpfbeadando_05_10\\smarthub\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D646A075-05B6-4D86-8F4B-A2BF1976E442}|SmartHub.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,43 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Device.cs",
-              "DocumentMoniker": "H:\\!Asztali valami2\\beadando_05_17\\WPFbeadando_05_10\\SmartHub\\Device.cs",
-              "RelativeDocumentMoniker": "Device.cs",
-              "ToolTip": "H:\\!Asztali valami2\\beadando_05_17\\WPFbeadando_05_10\\SmartHub\\Device.cs",
-              "RelativeToolTip": "Device.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T09:59:54.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "H:\\!Asztali valami2\\beadando_05_17\\WPFbeadando_05_10\\SmartHub\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "H:\\!Asztali valami2\\beadando_05_17\\WPFbeadando_05_10\\SmartHub\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAawJwAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAJoAAAAAAAAAAAA2wLQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T09:44:39.887Z",
+              "WhenOpened": "2026-05-12T09:59:04.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "H:\\!Asztali valami2\\beadando_05_17\\WPFbeadando_05_10\\SmartHub\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "H:\\!Asztali valami2\\beadando_05_17\\WPFbeadando_05_10\\SmartHub\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-11T09:43:41.376Z",
+              "WhenOpened": "2026-05-12T07:09:55.698Z",
               "EditorCaption": ""
             }
           ]

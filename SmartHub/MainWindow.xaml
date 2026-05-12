@@ -37,12 +37,32 @@
                      ItemsSource="{Binding Devices}"
                      SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"
                      Margin="0,0,0,15"
-                     SelectionChanged="EszkozLista_SelectionChanged">
+                     SelectionChanged="EszkozLista_SelectionChanged"
+>
 
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
                         <Setter Property="Background"
-                                Value="Red" />
+                                Value="Red"
+                                />
+                            <EventSetter Event="MouseEnter"
+                            Handler="EszkozLista_MouseEnter"/>
+
+                        <EventSetter Event="MouseLeave"
+                            Handler="EszkozLista_MouseLeave"/>
+
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <Border Background="{TemplateBinding Background}"
+                            Padding="5">
+
+                                        <ContentPresenter/>
+
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
                         <Style.Triggers>
                             <DataTrigger Binding="{Binding IsTurnedOn}"
                                          Value="True">
@@ -56,7 +76,8 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Vertical"
-                                    Margin="5">
+                                    Margin="5"
+                                    >
                             <TextBlock Text="{Binding Name}"
                                        FontSize="16"
                                        FontWeight="Bold" />
@@ -66,6 +87,8 @@
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
+
+                
 
             </ListBox>
 

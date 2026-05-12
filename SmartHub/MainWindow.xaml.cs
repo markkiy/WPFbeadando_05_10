@@ -156,5 +156,35 @@ namespace SmartHub
         {
             EszkozLista.SelectedIndex = -1;
         }
+
+        private void EszkozLista_MouseEnter(object sender, MouseEventArgs e)
+        {
+            ListBoxItem stackPanel = sender as ListBoxItem;
+
+            if (stackPanel.Background is SolidColorBrush brush)
+            {
+                Color c = brush.Color;
+
+                byte r = (byte)Math.Min(c.R + 20, 255);
+                byte g = (byte)Math.Min(c.G + 20, 255);
+                byte b = (byte)Math.Min(c.B + 20, 255);
+
+                stackPanel.Background = new SolidColorBrush(
+                    Color.FromRgb(r, g, b)
+                );
+            }
+        }
+
+        private void EszkozLista_MouseLeave(object sender, MouseEventArgs e)
+        {
+            ListBoxItem stackPanel = sender as ListBoxItem;
+
+            if (stackPanel.DataContext is Device device)
+            {
+                stackPanel.Background = device.IsTurnedOn
+                    ? Brushes.Green
+                    : Brushes.Red;
+            }
+        }
     }
 }
